@@ -1,0 +1,15 @@
+<h1>Cours des crypto-monnaies</h1>
+<p> Select Your Currency </p>
+
+<div class="form-group">
+     <%= form_tag do %>
+        <%= select_tag "all_crypto", options_for_select(@scrapping.keys.sort), class: "form-control"%>
+        <%= submit_tag "💲" , class: "btn btn-primary"%>
+<% end %>
+</div>
+
+<% if @all_crypto %>
+
+<p> <%= @all_crypto %> = <%= @scrapping[@all_crypto] %> </p>
+
+<% end %>

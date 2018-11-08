@@ -1,0 +1,17 @@
+body {
+  font-family: URW Gothic L, sans-serif;
+  font-variant: small-caps;
+  background-image: linear-gradient(-90deg, #ffcc99,#ffe6cc,#ffcc99);
+  padding: 50px;
+}
+
+h1, p {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+.form-group {
+  display: flex;
+  justify-content: center;
+}
